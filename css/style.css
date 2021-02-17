@@ -369,6 +369,25 @@ p {
   transition: 0.2s;
 }
 
+.city__header {
+  position: relative;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.city__header::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../img/icon-arrow-black.svg) no-repeat 50% 50%;
+  width: 10px;
+  height: 6px;
+}
+
 .header {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
